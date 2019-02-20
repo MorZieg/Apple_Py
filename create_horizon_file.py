@@ -1,3 +1,11 @@
+###########################################################################################
+# Apple PY - Automatic Portioning Preventing Lengthy manual Element assignment for PYthon #
+# Version 1.0																		      #
+# License: GPLv3																	      #
+# Moritz O. Ziegler - mziegler@gfz-potsdam.de, Malte Ziebarth, Karsten Reiter		      #
+# Manual: http://doi.org/10.2312/wsm.2019.001										      #
+# Download: http://github.com/MorZieg/APPLE_PY										      #
+###########################################################################################
 def main():
 	import numpy as np
 	
@@ -27,9 +35,11 @@ def main():
 	horizons = np.asarray(horizons)
 		
 	fid.close()
+
 	
 	# Load all the following horizons
-	for i, file in enumerate(files[1:]):
+	print files
+	for i, file in enumerate(files):
 		# Add a new column to the horizons variable for each new horizon and set the depth to 9999
 		print ('Loading File %s' % file)
 		horizons = np.append(horizons,np.zeros([len(horizons),1]),1)
@@ -99,8 +109,7 @@ def main():
 		fid.write('\n')
 	fid.close()
 	
-#############################################################################################################
+###########################################################################################
 if __name__ == '__main__':
 	main()
-
-#############################################################################################################
+###########################################################################################
