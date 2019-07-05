@@ -1,6 +1,6 @@
 ###########################################################################################
 # Apple PY - Automatic Portioning Preventing Lengthy manual Element assignment for PYthon #
-# Version 1.0																		      #
+# Version 1.01																		      #
 # License: GPLv3																	      #
 # Moritz O. Ziegler - mziegler@gfz-potsdam.de, Malte Ziebarth, Karsten Reiter		      #
 # Manual: http://doi.org/10.2312/wsm.2019.001										      #
@@ -14,7 +14,8 @@ horizons = 'horizons.txt'
 strata = ('Unit_1','Unit_2','Unit_3','Unit_4','Unit_5','Unit_6')
 twodelem = 'omit'
 fname = 'elements.set'
-elems_exclude = [[]]
+#elems_exclude = ()
+
 
 ###########################################################################################
 def main(geometry,horizons,strata,twodelem,fname,elems_exclude):
@@ -34,7 +35,7 @@ def main(geometry,horizons,strata,twodelem,fname,elems_exclude):
 			naun = line[(line.find('ELSET=')+6):-1]
 			naun = naun.split()
 			if 'elems_exclude' in locals():
-				if  any(s == naun for s in elems_exclude):
+				if  any(s == naun[0] for s in elems_exclude):
 					print 'ATTENTION! %s: Not loaded (user-defined)' % naun[0]
 					line = fid.readline()
 					continue
@@ -207,5 +208,7 @@ def assign_elems(depth,elem):
 
 ###########################################################################################
 if __name__ == '__main__':
+	if 'elems_exclude' not in locals():
+		elems_exclude = ()
 	main(geometry,horizons,strata,twodelem,fname,elems_exclude)
 ###########################################################################################
