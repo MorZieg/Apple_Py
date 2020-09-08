@@ -15,7 +15,6 @@ The recommended citation for Apple PY is: (You can find the BibTeX snippet in th
 
 > Ziegler, M. O., Ziebarth, M., and Reiter, K. (2019). Python Script Apple PY v1.02. GFZ Data Services. DOI: http://doi.org/10.5880/wsm.2019.001  
 
-
 [![DOI](https://img.shields.io/badge/DOI-10.5880%2Fwsm.2019.001-blue.svg)](http://doi.org/10.5880/wsm.2019.001)
 
 ## License 
