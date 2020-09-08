@@ -1,6 +1,6 @@
 ###########################################################################################
 # Apple PY - Automatic Portioning Preventing Lengthy manual Element assignment for PYthon #
-# Version 1.01																		      #
+# Version 1.02																		      #
 # License: GPLv3																	      #
 # Moritz O. Ziegler - mziegler@gfz-potsdam.de, Malte Ziebarth, Karsten Reiter		      #
 # Manual: http://doi.org/10.2312/wsm.2019.001										      #
@@ -9,13 +9,18 @@
 import numpy as np, scipy.spatial as sp, collections
 
 #### USER INPUT ###
+# ATTENTION! If you are working with only one unit/element set in the variable strata or
+# elems_exclude use either:
+# squared brackets, e.g. elems_exclude = ['disregarded_unit']
+# or
+# append a comma after the string, e.g. elems_exclude = ('disegarded_unit',)
+
 geometry = 'test.inp'
 horizons = 'horizons.txt'
 strata = ('Unit_1','Unit_2','Unit_3','Unit_4','Unit_5','Unit_6')
 twodelem = 'omit'
 fname = 'elements.set'
 #elems_exclude = ()
-
 
 ###########################################################################################
 def main(geometry,horizons,strata,twodelem,fname,elems_exclude):
