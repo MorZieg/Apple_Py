@@ -6,17 +6,20 @@
 
 Documentation and usage examples are available online at:
 
-Ziegler, M. O., Ziebarth, M., and Reiter, K. (2019). Manual of the Python Script Apple PY v1.0. World Stress Map Technical Report 19-01, GFZ German Research Centre for Geosciences.
-DOI: http://doi.org/10.2312/wsm.2019.001 [![DOI](https://img.shields.io/badge/DOI-10.2312%2Fwsm.2019.001-blue.svg)](http://doi.org/10.2312/wsm.2019.001)
+Ziegler, M. O., Ziebarth, M., and Reiter, K. (2020). Manual of the Python Script Apple PY v1.3. World Stress Map Technical Report 20-02, GFZ German Research Centre for Geosciences.
+DOI: http://doi.org/10.2312/wsm.2020.002 [![DOI](https://img.shields.io/badge/DOI-10.2312%2Fwsm.2020.002-blue.svg)](http://doi.org/10.2312/wsm.2020.002)
 
 ## Citation
 The recommended citation for Apple PY is: (You can find the BibTeX snippet in the
 [`CITATION` file](CITATION.bib)):
 
-> Ziegler, M. O., Ziebarth, M., and Reiter, K. (2019). Python Script Apple PY v1.0. GFZ Data Services. DOI: http://doi.org/10.5880/wsm.2019.001  
+> Ziegler, M. O., Ziebarth, M., and Reiter, K. (2020). Python Script Apple PY v1.3. GFZ Data Services. DOI: http://doi.org/10.5880/wsm.2020.002  
 
 
-[![DOI](https://img.shields.io/badge/DOI-10.5880%2Fwsm.2019.001-blue.svg)](http://doi.org/10.5880/wsm.2019.001)
+[![DOI](https://img.shields.io/badge/DOI-10.5880%2Fwsm.2020.002-blue.svg)](http://doi.org/10.5880/wsm.2020.002)
+
+## Previous version
+The previous version 1.0, 1.01, and 1.02 are accesible via GitHub or as: [![DOI](https://img.shields.io/badge/DOI-10.5880%2Fwsm.2019.001-blue.svg)](http://doi.org/10.5880/wsm.2019.001) . The corresponding manual is available as: [![DOI](https://img.shields.io/badge/DOI-10.2312%2Fwsm.2019.001-blue.svg)](http://doi.org/10.2312/wsm.2019.001)
 
 ## License 
 GNU General Public License, Version 3, 29 June 2007
